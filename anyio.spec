@@ -4,7 +4,7 @@
 #
 Name     : anyio
 Version  : 2.0.2
-Release  : 1
+Release  : 2
 URL      : https://files.pythonhosted.org/packages/db/7c/c25052956b882c226adcad815197f32dde4eb9dfbbd19041b291811b1032/anyio-2.0.2.tar.gz
 Source0  : https://files.pythonhosted.org/packages/db/7c/c25052956b882c226adcad815197f32dde4eb9dfbbd19041b291811b1032/anyio-2.0.2.tar.gz
 Summary  : High level compatibility layer for multiple asynchronous event loop implementations
@@ -13,11 +13,15 @@ License  : MIT
 Requires: anyio-license = %{version}-%{release}
 Requires: anyio-python = %{version}-%{release}
 Requires: anyio-python3 = %{version}-%{release}
+Requires: async_generator
+Requires: curio
 Requires: dataclasses
 Requires: idna
 Requires: sniffio
 Requires: typing_extensions
+BuildRequires : async_generator
 BuildRequires : buildreq-distutils3
+BuildRequires : curio
 BuildRequires : dataclasses
 BuildRequires : idna
 BuildRequires : pluggy
@@ -79,7 +83,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1609953659
+export SOURCE_DATE_EPOCH=1609955932
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib

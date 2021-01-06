@@ -2,3 +2,4 @@
 # picked up automatically. One name per line, no whitespace.
 curio
 async_generator
+setuptools_scm

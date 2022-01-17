@@ -4,7 +4,7 @@
 #
 Name     : anyio
 Version  : 3.5.0
-Release  : 19
+Release  : 20
 URL      : https://files.pythonhosted.org/packages/4f/d0/b957c0679a9bd0ed334e2e584102f077c3e703f83d099464c3d9569b7c8a/anyio-3.5.0.tar.gz
 Source0  : https://files.pythonhosted.org/packages/4f/d0/b957c0679a9bd0ed334e2e584102f077c3e703f83d099464c3d9569b7c8a/anyio-3.5.0.tar.gz
 Summary  : High level compatibility layer for multiple asynchronous event loop implementations
@@ -29,7 +29,6 @@ BuildRequires : pypi-pluggy
 BuildRequires : pypi-pytest
 BuildRequires : pypi-tox
 BuildRequires : pypi-virtualenv
-BuildRequires : setuptools_scm
 
 %description
 .. image:: https://github.com/agronholm/anyio/actions/workflows/test.yml/badge.svg
@@ -86,7 +85,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1641925306
+export SOURCE_DATE_EPOCH=1642462759
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
